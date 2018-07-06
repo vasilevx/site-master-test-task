@@ -346,6 +346,11 @@ a {
   margin: 1px;
 }
 
+.slider .switches label:focus, .slider .switches label:hover, .slider .switches label:active {
+  -webkit-box-shadow: 0 0 2px 2px #cc310f;
+          box-shadow: 0 0 2px 2px #cc310f;
+}
+
 .slider #slide-1:checked ~ .switches label[for="slide-1"],
 .slider #slide-2:checked ~ .switches label[for="slide-2"],
 .slider #slide-3:checked ~ .switches label[for="slide-3"],
@@ -372,13 +377,9 @@ a {
           border-radius: 50%;
 }
 
-.slider .socials a:hover, .slider .socials a:focus {
-  background: #cc310f;
-}
-
-.slider .socials a:active {
-  -webkit-box-shadow: #fff 0px 0px 5px 1px;
-          box-shadow: #fff 0px 0px 5px 1px;
+.slider .socials a:hover, .slider .socials a:focus, .slider .socials a:active {
+  -webkit-box-shadow: #cc310f 0px 0px 5px 1px;
+          box-shadow: #cc310f 0px 0px 5px 1px;
 }
 
 .slider .socials a i {

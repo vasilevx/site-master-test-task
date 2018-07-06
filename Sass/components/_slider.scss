@@ -47,7 +47,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding-left: 30px;
-
+    
     label {
       width: 14px;
       display: inline-block;
@@ -57,6 +57,12 @@
       outline: none;
       cursor: pointer;
       margin: 1px;
+
+      &:focus, 
+      &:hover,
+      &:active{
+        box-shadow: 0 0 2px 2px  darken($orange,20%);
+      }
     }
   }
 
@@ -81,12 +87,9 @@
       border-radius: 50%;
 
       &:hover,
-      &:focus {
-        background: darken($orange,20%);
-      }
-
+      &:focus,
       &:active {
-        box-shadow:  #fff 0px 0px 5px 1px;
+        box-shadow: darken($orange,20%) 0px 0px 5px 1px;
       }
 
       i {
