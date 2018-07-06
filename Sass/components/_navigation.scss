@@ -1,0 +1,29 @@
+
+.main-menu {
+	font-size: 14/16 * 1rem;
+  a {
+    text-decoration: none;
+    color: transparentize(#fff,0.1);
+    padding: 0;
+    margin: 0;
+  }
+  margin: 0;
+  padding: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  li {
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    padding: 13px 15px;
+    
+    &:first-child {
+      padding-left: 24px;
+    }
+  }
+}

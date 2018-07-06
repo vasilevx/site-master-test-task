@@ -1,0 +1,28 @@
+@import 'fonts';
+@import 'variables';
+
+body {
+  font-size: 100%;
+  font-family: $OpenSans;
+  background-color: #e8e8e8;
+  //background-image: url('../img/bg.jpg'); 
+
+
+}
+
+h1, h2, h3, p {
+	padding: 0; 
+	margin: 0;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+

@@ -1,0 +1,46 @@
+.big-article {
+	margin-bottom: 23px;
+	box-sizing: border-box;
+	width: 100%;
+  max-width: 630px;
+
+  @media (max-width: 780px) {
+    max-width: 100%;
+  }
+
+
+  .description {
+    max-width: 630px;
+
+    @media (max-width: 780px) {
+      max-width: 100%;
+    }
+
+    padding-top: 35/630*100* 1%;
+    padding-left: 35/630*100* 1%;
+    padding-right: 5px;
+    padding-bottom: 20px;
+
+    h2 {
+      font-size: 30/16 * 1rem;
+      line-height: 34/16 * 1rem;
+    }
+
+    h3 {
+      margin-left: 1px;
+      margin-top: 27px;
+      color: $orange;
+      font-size: 1rem;
+      line-height: 34/16 * 1rem;
+    }
+
+    p {
+      margin-left: 2px;
+      line-height: 20/16 * 1rem;
+      font-size: 14/16 * 1rem;
+      margin-top: 5px;
+      padding-right: 50/630*100* 1%;
+    }
+  }
+
+}
