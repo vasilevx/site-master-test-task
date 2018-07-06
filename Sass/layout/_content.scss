@@ -15,17 +15,6 @@
 	color: $title-color;
 }
 
-a:hover,
-a:focus {
-  color: darken($orange, 5%);
-}
-
-*:active, 
-*:hover, 
-*:focus {
-    outline: none;
-}
-
 .content {
 
 	max-width: 630px;

@@ -20,6 +20,21 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus {
+  color: #f05837;
+}
+
+*:active,
+*:hover,
+*:focus {
+  outline: none;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .main-menu {
   -webkit-transition: 1s all;
   -o-transition: 1s all;
@@ -514,17 +529,6 @@ header .wrapper {
 .title,
 .title a {
   color: #3a3e3f;
-}
-
-a:hover,
-a:focus {
-  color: #f05837;
-}
-
-*:active,
-*:hover,
-*:focus {
-  outline: none;
 }
 
 .content {
