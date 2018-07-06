@@ -28,11 +28,11 @@
   }
 
   .lorem {
-    margin-bottom: 28px;
+    margin-bottom: 27px;
     
     h3 {
-      margin-top: 4px;
-      font-size: 12/16 * 1rem;
+      margin-top: 3px;
+      font-size: 13/16 * 1rem;
       line-height: 34/16 * 1rem;
       color: rgba(174,174,174,0.8);
       font-style: italic;
@@ -40,10 +40,11 @@
     }
 
     p {
-      font-size: 13/16 * 1rem;
+      margin-top: 2px;
+      font-size: 14/16 * 1rem;
       line-height: 20/16 * 1rem;
       color: #959595;
-      padding-right: 51/330*100 * 1%;
+      padding-right: 35/330*100 * 1%;
 
     }
   }
@@ -78,6 +79,8 @@
     border: 1px solid rgba(0,0,0,0.12);
     box-shadow:  inset 0px 10px 5px -9px  rgba(0,0,0,0.07);
     .btn {
+      padding: 7px 12px;
+      font-family: 'Myriad Pro Regular';
       cursor: pointer;
       flex-shrink: 0;
       max-width: 105px;
@@ -170,8 +173,7 @@
   }
 
   p {
-    
-
+    margin-left: -1px;
    font-size: 12/16 * 1rem;
    line-height: 20/16 * 1rem;
    color: transparentize(#3a3a3a,0.2);
@@ -188,7 +190,7 @@ a:focus {
 
 .small {
   margin-top: -2px;
-  margin-left: -1px;
+  margin-left: -2px;
   font-size: 10/16 * 1rem;
   line-height: 20/16 * 1rem;
   color: rgba(126,126,126,0.8);
@@ -197,7 +199,7 @@ a:focus {
 
 .tags {
 
-  margin-left: 5px;
+  margin-left: 4px;
   padding-right: 45/330*100 * 1%;
   ul{
 
@@ -211,7 +213,7 @@ a:focus {
   }
 
   .btn {
-    padding: 6px 15px;
+    padding: 6px 16px;
   }
 
   li {

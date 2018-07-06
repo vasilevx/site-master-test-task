@@ -1,8 +1,21 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url("../fonts/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-size: 100%;
   font-family: "Open Sans", sans-serif;
   background-color: #e8e8e8;
+}
+
+body a:hover,
+body a:focus {
+  color: #f05837;
 }
 
 h1, h2, h3, p {
@@ -18,11 +31,6 @@ h1, h2, h3, p {
 
 a {
   text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #f05837;
 }
 
 *:active,
@@ -270,12 +278,20 @@ a:focus {
 
 .slider {
   position: relative;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
   width: 100%;
 }
 
 .slider input[type="radio"] {
   display: none;
+}
+
+.slider .slider-img {
+  display: none;
+}
+
+.slider .first {
+  display: block;
 }
 
 .slider::before, .slider::after {
@@ -284,11 +300,11 @@ a:focus {
   position: absolute;
   content: "";
   bottom: 23px;
-  left: 15px;
+  left: 10px;
   width: 50%;
   top: 70%;
-  -webkit-box-shadow: 0 18px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 18px 10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 22px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 22px 8px rgba(0, 0, 0, 0.3);
   -webkit-transform: rotate(-2deg);
       -ms-transform: rotate(-2deg);
           transform: rotate(-2deg);
@@ -298,13 +314,13 @@ a:focus {
   -webkit-transform: rotate(2deg);
       -ms-transform: rotate(2deg);
           transform: rotate(2deg);
-  right: 15px;
+  right: 10px;
   left: auto;
 }
 
 .slider .switches {
   position: absolute;
-  bottom: 16px;
+  bottom: 13px;
   width: 100%;
   left: 0;
   text-align: center;
@@ -343,7 +359,7 @@ a:focus {
 
 .slider .socials {
   position: absolute;
-  bottom: 9.375%;
+  bottom: 8.125%;
   left: 9.44882%;
 }
 
@@ -644,12 +660,12 @@ header .wrapper {
 }
 
 .sidebar .lorem {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 }
 
 .sidebar .lorem h3 {
-  margin-top: 4px;
-  font-size: 0.75rem;
+  margin-top: 3px;
+  font-size: 0.8125rem;
   line-height: 2.125rem;
   color: rgba(174, 174, 174, 0.8);
   font-style: italic;
@@ -657,10 +673,11 @@ header .wrapper {
 }
 
 .sidebar .lorem p {
-  font-size: 0.8125rem;
+  margin-top: 2px;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   color: #959595;
-  padding-right: 15.45455%;
+  padding-right: 10.60606%;
 }
 
 .sidebar .subscribe {
@@ -706,6 +723,8 @@ header .wrapper {
 }
 
 .sidebar .subscribe form .btn {
+  padding: 7px 12px;
+  font-family: 'Myriad Pro Regular';
   cursor: pointer;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -820,6 +839,7 @@ header .wrapper {
 }
 
 .sidebar .interesting p {
+  margin-left: -1px;
   font-size: 0.75rem;
   line-height: 1.25rem;
   color: rgba(58, 58, 58, 0.8);
@@ -837,14 +857,14 @@ header .wrapper {
 
 .sidebar .interesting .small {
   margin-top: -2px;
-  margin-left: -1px;
+  margin-left: -2px;
   font-size: 0.625rem;
   line-height: 1.25rem;
   color: rgba(126, 126, 126, 0.8);
 }
 
 .sidebar .tags {
-  margin-left: 5px;
+  margin-left: 4px;
   padding-right: 13.63636%;
 }
 
@@ -866,7 +886,7 @@ header .wrapper {
 }
 
 .sidebar .tags .btn {
-  padding: 6px 15px;
+  padding: 6px 16px;
 }
 
 .sidebar .tags li {
