@@ -87,38 +87,6 @@ a {
   }
 }
 
-.hamburger {
-  background: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  line-height: 45px;
-  padding: 5px 15px 0px 15px;
-  color: #999;
-  border: 0;
-  font-size: 1.4em;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
-}
-
-.cross {
-  background: none;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  padding: 7px 15px 0px 15px;
-  color: #999;
-  border: 0;
-  font-size: 3em;
-  line-height: 65px;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 10000000000000;
-}
-
 .cards {
   position: relative;
 }
@@ -493,6 +461,7 @@ header .wrapper {
 }
 
 .burger {
+  text-shadow: 1px 1px 5px black;
   font-size: 40px;
   text-align: center;
   color: #fff;
@@ -543,6 +512,10 @@ header .wrapper {
 a:hover,
 a:focus {
   color: #f05837;
+}
+
+*:focus,
+*:active {
   outline: none;
 }
 

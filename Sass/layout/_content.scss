@@ -18,9 +18,12 @@
 a:hover,
 a:focus {
   color: darken($orange, 5%);
-  outline: none;
 }
 
+*:focus,
+*:active {
+  outline: none;
+}
 
 .content {
 
