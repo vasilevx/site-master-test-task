@@ -70,8 +70,9 @@
       padding: 13px;
       border-radius: 50%;
 
-      &:hover {
-        background: darken($orange,10%);
+      &:hover,
+      &:focus {
+        background: darken($orange,20%);
       }
 
       &:active {

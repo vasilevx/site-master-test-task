@@ -78,6 +78,7 @@
     border: 1px solid rgba(0,0,0,0.12);
     box-shadow:  inset 0px 10px 5px -9px  rgba(0,0,0,0.07);
     .btn {
+      cursor: pointer;
       flex-shrink: 0;
       max-width: 105px;
       box-sizing: border-box;
@@ -123,16 +124,28 @@
   0 2px 0px 0px transparentize(#999999,0.4),
   inset 0 1px 0px 0px rgba(255,255,255,0.8);
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 3px 1px darken($orange, 5%);
+    outline: none;
+  }
+
+  &:active {
+    box-shadow: 0 0 10px 1px darken($orange, 5%);
+  }
 }
 
 .interesting {
 
   margin-bottom: 51px;
   margin-left: 4px;
+
   .interesting-list {
     margin-top: 15px;
     padding:0;
   }
+
+
   li {
     list-style: none;
     padding: 0;
@@ -157,14 +170,23 @@
   }
 
   p {
+    
 
    font-size: 12/16 * 1rem;
    line-height: 20/16 * 1rem;
    color: transparentize(#3a3a3a,0.2);
    padding-right: 10/330*100 * 1%;
+   a {
+     color: transparentize(#3a3a3a,0.2);
+   }
  }
 
- .small {
+a:hover,
+a:focus {
+  color: darken($orange,5%);
+}
+
+.small {
   margin-top: -2px;
   margin-left: -1px;
   font-size: 10/16 * 1rem;

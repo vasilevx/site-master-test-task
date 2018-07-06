@@ -11,8 +11,15 @@
 
 }
 
-.title {
+.title,
+.title a {
 	color: $title-color;
+}
+
+a:hover,
+a:focus {
+  color: darken($orange, 5%);
+  outline: none;
 }
 
 
