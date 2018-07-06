@@ -20,7 +20,9 @@ a:focus {
   color: darken($orange, 5%);
 }
 
-:active, :hover, :focus {
+*:active, 
+*:hover, 
+*:focus {
     outline: none;
 }
 

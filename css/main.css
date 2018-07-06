@@ -211,6 +211,13 @@ a {
   padding-right: 14.28571%;
 }
 
+@media (max-width: 420px) {
+  .small-articles .description {
+    padding-left: 3.57143%;
+    padding-right: 7.14286%;
+  }
+}
+
 .small-articles .description h2 {
   font-size: 1rem;
   line-height: 1.375rem;
@@ -514,7 +521,9 @@ a:focus {
   color: #f05837;
 }
 
-:active, :hover, :focus {
+*:active,
+*:hover,
+*:focus {
   outline: none;
 }
 
