@@ -488,18 +488,16 @@ header .wrapper {
   display: none;
 }
 
-#menu-switch:checked ~ label[for="menu-switch"] {
-  background: green;
-}
-
 #menu-switch:checked ~ .main-menu {
   display: block;
 }
 
 .burger {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
   cursor: pointer;
   display: block;
-  background: red;
   position: absolute;
   right: 2px;
   top: 2px;

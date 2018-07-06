@@ -15,7 +15,7 @@
 			<div class="wrapper">
 				<div class="logo"><a href="#"><img src="img/logo.png" alt="Логотип"></a></div>
 				<input type="checkbox" id="menu-switch">
-				<label class="burger" for="menu-switch"></label>
+				<label class="burger fas fa-bars" id="burger-id" for="menu-switch" onclick="burgerChk(this);"></label>
 				<nav class="main-menu">
 					<ul>
 						<li><a href="#">Главная</a></li><li>
@@ -154,13 +154,23 @@
 			}
 			alert("Спасибо, " + address);
 		}
-	</script>
-
-	<script>
 		function burgerReset() {
 			if (window.innerWidth > 749) {
 				document.getElementById('menu-switch').checked = false;
+				document.getElementById('burger-id').className = "burger fas fa-bars";
+
+
 			}
+		}
+
+		function burgerChk(t) {
+			if (document.getElementById('menu-switch').checked) {
+					t.className = "burger fas fa-bars";
+			}
+			else {
+				t.className = "burger fas fa-times";
+			}
+			
 		}
 	</script>
 </body>
