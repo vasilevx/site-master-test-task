@@ -7,10 +7,14 @@
 
 
 
-  @media (max-width: 780px) {
+  @media (max-width: 785px) {
     max-width: 100%;
     justify-content: space-around;
-  margin-bottom: 23px;
+    margin-bottom: 23px;
+  }
+
+  @media (max-width: 420px) {
+    margin-bottom: 0;
   }
 
 	.description {

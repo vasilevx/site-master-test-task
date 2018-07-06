@@ -8,12 +8,18 @@ header {
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing:border-box;
   box-shadow: 
     inset rgba(53,53,51,0.3) 0 0 0 100px,
     rgba(53,53,51,0.3) 0 0 0 5px;
   .wrapper {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
+    
+    //align-items: center;
+    justify-content: flex-start;
+
   }
 
 }
@@ -21,13 +27,25 @@ header {
 .logo {
   width: 209/980*100 * 1%;
   min-width: 115px;
+  max-width: 209px;
   padding-top: 3px;
   padding-bottom: 9px;
+  box-sizing: border-box;
   display: inline-block;
   font-size: 24/16 * 1rem;
   font-weight: bold;
   color: #fff;
   background-color: $orange;
+  @media(min-width: 750px) and (max-width:785px) {
+    width: 115px;
+  }
+    @media(max-width: 749px) {
+    min-width: 0;
+    max-width: 100%;
+   width: 100%;
+   text-align: center;
+  }
+
 }
 
 .top-line {
@@ -47,6 +65,32 @@ header {
     background: none; 
     flex-grow: 1;
     flex-shrink: 1;
+  }
+}
+
+#menu-switch {
+  display: none;
+}
+
+#menu-switch:checked ~ label[for="menu-switch"] {
+  background: green;
+}
+
+#menu-switch:checked ~ .main-menu {
+  display: block;
+}
+.burger {
+  cursor: pointer;
+  display: block;
+  background: red;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  width: 40px;
+  height: 40px;
+
+  @media(min-width: 750px) {
+    display: none;
   }
 }
 
