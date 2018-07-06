@@ -215,6 +215,7 @@ a {
   .small-articles .description {
     padding-left: 3.57143%;
     padding-right: 7.14286%;
+    background: red;
   }
 }
 
